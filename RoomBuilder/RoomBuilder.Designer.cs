@@ -44,6 +44,8 @@
             this.lblRoomText = new System.Windows.Forms.Label();
             this.txtRoomText = new System.Windows.Forms.TextBox();
             this.btnMakeRoom = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // chkSecret
@@ -97,8 +99,14 @@
             this.chkItems.Items.AddRange(new object[] {
             "Potion",
             "Bomb",
-            "Armor",
-            "Weapon"});
+            "Chest- Bronze Armor",
+            "Chest- Iron Armor",
+            "Chest- Steel Armor",
+            "Chest- Mythril Armor",
+            "Chest- Bronze Sword",
+            "Chest- Iron Sword",
+            "Chest- Steel Sword",
+            "Chest- Mythril Sword"});
             this.chkItems.Location = new System.Drawing.Point(130, 54);
             this.chkItems.Name = "chkItems";
             this.chkItems.Size = new System.Drawing.Size(120, 94);
@@ -187,7 +195,7 @@
             // 
             this.lblRoomText.AutoSize = true;
             this.lblRoomText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoomText.Location = new System.Drawing.Point(2, 187);
+            this.lblRoomText.Location = new System.Drawing.Point(0, 252);
             this.lblRoomText.Name = "lblRoomText";
             this.lblRoomText.Size = new System.Drawing.Size(86, 20);
             this.lblRoomText.TabIndex = 28;
@@ -201,11 +209,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRoomText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRoomText.Location = new System.Drawing.Point(4, 210);
+            this.txtRoomText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRoomText.Location = new System.Drawing.Point(4, 275);
             this.txtRoomText.Multiline = true;
             this.txtRoomText.Name = "txtRoomText";
             this.txtRoomText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtRoomText.Size = new System.Drawing.Size(951, 320);
+            this.txtRoomText.Size = new System.Drawing.Size(951, 255);
             this.txtRoomText.TabIndex = 29;
             // 
             // btnMakeRoom
@@ -220,11 +229,32 @@
             this.btnMakeRoom.Text = "Create New Room";
             this.btnMakeRoom.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 190);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 20);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Room Name";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(104, 183);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(272, 31);
+            this.textBox1.TabIndex = 32;
+            // 
             // RoomBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 624);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMakeRoom);
             this.Controls.Add(this.txtRoomText);
             this.Controls.Add(this.lblRoomText);
@@ -266,6 +296,8 @@
         private System.Windows.Forms.Label lblRoomText;
         private System.Windows.Forms.TextBox txtRoomText;
         private System.Windows.Forms.Button btnMakeRoom;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
