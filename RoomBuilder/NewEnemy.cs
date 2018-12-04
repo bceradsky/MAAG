@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RoomBuilder
 {
-    public partial class Form1 : Form
+    public partial class NewEnemy : Form
     {
-        public Form1()
+        public NewEnemy()
         {
             InitializeComponent();
         }

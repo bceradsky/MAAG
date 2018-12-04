@@ -1,6 +1,6 @@
 ﻿namespace RoomBuilder
 {
-    partial class Form1
+    partial class RoomBuilder
     {
         /// <summary>
         /// Required designer variable.
@@ -41,6 +41,9 @@
             this.btnNewEnemy = new System.Windows.Forms.Button();
             this.lblNewItem = new System.Windows.Forms.Label();
             this.lblNewEnemy = new System.Windows.Forms.Label();
+            this.lblRoomText = new System.Windows.Forms.Label();
+            this.txtRoomText = new System.Windows.Forms.TextBox();
+            this.btnMakeRoom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // chkSecret
@@ -114,18 +117,6 @@
             // chkConnections
             // 
             this.chkConnections.FormattingEnabled = true;
-            this.chkConnections.Items.AddRange(new object[] {
-            "These",
-            "Will",
-            "Be ",
-            "The ",
-            "Rooms You",
-            "Create",
-            "And The Rooms",
-            "To Which",
-            "You Can Connect",
-            "The Room",
-            "You Are Building"});
             this.chkConnections.Location = new System.Drawing.Point(4, 54);
             this.chkConnections.Name = "chkConnections";
             this.chkConnections.Size = new System.Drawing.Size(120, 94);
@@ -160,6 +151,7 @@
             this.btnNewItem.TabIndex = 27;
             this.btnNewItem.Text = "New Item";
             this.btnNewItem.UseVisualStyleBackColor = true;
+            this.btnNewItem.Click += new System.EventHandler(this.btnNewItem_Click);
             // 
             // btnNewEnemy
             // 
@@ -169,6 +161,7 @@
             this.btnNewEnemy.TabIndex = 26;
             this.btnNewEnemy.Text = "New Enemy";
             this.btnNewEnemy.UseVisualStyleBackColor = true;
+            this.btnNewEnemy.Click += new System.EventHandler(this.btnNewEnemy_Click);
             // 
             // lblNewItem
             // 
@@ -190,11 +183,51 @@
             this.lblNewEnemy.TabIndex = 24;
             this.lblNewEnemy.Text = "Make a New Enemy";
             // 
-            // Form1
+            // lblRoomText
+            // 
+            this.lblRoomText.AutoSize = true;
+            this.lblRoomText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoomText.Location = new System.Drawing.Point(2, 187);
+            this.lblRoomText.Name = "lblRoomText";
+            this.lblRoomText.Size = new System.Drawing.Size(86, 20);
+            this.lblRoomText.TabIndex = 28;
+            this.lblRoomText.Text = "Room Text";
+            // 
+            // txtRoomText
+            // 
+            this.txtRoomText.AcceptsReturn = true;
+            this.txtRoomText.AcceptsTab = true;
+            this.txtRoomText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRoomText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRoomText.Location = new System.Drawing.Point(4, 210);
+            this.txtRoomText.Multiline = true;
+            this.txtRoomText.Name = "txtRoomText";
+            this.txtRoomText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtRoomText.Size = new System.Drawing.Size(951, 320);
+            this.txtRoomText.TabIndex = 29;
+            // 
+            // btnMakeRoom
+            // 
+            this.btnMakeRoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMakeRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMakeRoom.Location = new System.Drawing.Point(371, 568);
+            this.btnMakeRoom.Name = "btnMakeRoom";
+            this.btnMakeRoom.Size = new System.Drawing.Size(205, 44);
+            this.btnMakeRoom.TabIndex = 30;
+            this.btnMakeRoom.Text = "Create New Room";
+            this.btnMakeRoom.UseVisualStyleBackColor = true;
+            // 
+            // RoomBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 624);
+            this.Controls.Add(this.btnMakeRoom);
+            this.Controls.Add(this.txtRoomText);
+            this.Controls.Add(this.lblRoomText);
             this.Controls.Add(this.btnNewItem);
             this.Controls.Add(this.btnNewEnemy);
             this.Controls.Add(this.lblNewItem);
@@ -208,8 +241,8 @@
             this.Controls.Add(this.chkConnections);
             this.Controls.Add(this.lblConnections);
             this.Controls.Add(this.lblTitle);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "RoomBuilder";
+            this.Text = "MAAG - RoomBuilder";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,6 +263,9 @@
         private System.Windows.Forms.Button btnNewEnemy;
         private System.Windows.Forms.Label lblNewItem;
         private System.Windows.Forms.Label lblNewEnemy;
+        private System.Windows.Forms.Label lblRoomText;
+        private System.Windows.Forms.TextBox txtRoomText;
+        private System.Windows.Forms.Button btnMakeRoom;
     }
 }
 
