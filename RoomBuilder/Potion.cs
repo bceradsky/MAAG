@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace RoomBuilder
 {
-    class Weapon
+    class Potion
     {
         public string name;
         public string descr;
-        public int damage;
+        public int restore;
     }
 }

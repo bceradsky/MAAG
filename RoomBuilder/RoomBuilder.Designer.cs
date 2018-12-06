@@ -287,9 +287,7 @@
 
         private System.Windows.Forms.CheckedListBox chkSecret;
         private System.Windows.Forms.Label lblSecret;
-        private System.Windows.Forms.CheckedListBox chkEnemies;
         private System.Windows.Forms.Label lblEnemies;
-        private System.Windows.Forms.CheckedListBox chkItems;
         private System.Windows.Forms.Label lblItems;
         private System.Windows.Forms.CheckedListBox chkConnections;
         private System.Windows.Forms.Label lblConnections;
@@ -303,6 +301,8 @@
         private System.Windows.Forms.Button btnMakeRoom;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.CheckedListBox chkEnemies;
+        public System.Windows.Forms.CheckedListBox chkItems;
     }
 }
 

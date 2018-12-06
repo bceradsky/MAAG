@@ -8,5 +8,8 @@ namespace RoomBuilder
 {
     class Armor
     {
+        public string name;
+        public string descr;
+        public int defense;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RoomBuilder
 {
-    class Weapon
+    class Bomb
     {
         public string name;
         public string descr;
