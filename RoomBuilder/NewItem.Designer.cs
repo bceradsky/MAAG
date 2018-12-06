@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblItemName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.lblType = new System.Windows.Forms.Label();
             this.cmbType = new System.Windows.Forms.ComboBox();
             this.lblDescr = new System.Windows.Forms.Label();
@@ -57,14 +57,14 @@
             this.lblItemName.TabIndex = 0;
             this.lblItemName.Text = "Name";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(86, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 31);
-            this.textBox1.TabIndex = 1;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(86, 6);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(236, 31);
+            this.txtName.TabIndex = 1;
             // 
             // lblType
             // 
@@ -237,7 +237,7 @@
             this.Controls.Add(this.lblDescr);
             this.Controls.Add(this.cmbType);
             this.Controls.Add(this.lblType);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblItemName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "NewItem";
@@ -250,7 +250,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblItemName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblType;
         private System.Windows.Forms.ComboBox cmbType;
         private System.Windows.Forms.Label lblDescr;

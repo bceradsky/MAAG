@@ -19,8 +19,8 @@ namespace RoomBuilder
 
         private void btnNewItem_Click(object sender, EventArgs e)
         {
-            var form = new NewItem();
-            form.ShowDialog();
+            var form = new NewItem(this);
+            form.Show();
         }
 
         private void btnNewEnemy_Click(object sender, EventArgs e)

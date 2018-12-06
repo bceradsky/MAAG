@@ -45,12 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Armor.cs" />
+    <Compile Include="Bomb.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="NewEnemy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewEnemy.Designer.cs">
       <DependentUpon>NewEnemy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Potion.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="RoomBuilder.cs">
       <SubType>Form</SubType>

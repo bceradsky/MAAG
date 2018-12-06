@@ -8,5 +8,7 @@ namespace RoomBuilder
 {
     class Item
     {
+        public string name;
+        public string descr;
     }
 }
